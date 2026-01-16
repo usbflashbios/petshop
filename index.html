@@ -1,100 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	<meta charset="utf-8" />
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta content="text/html; charset=utf-8" http-equiv="content-type">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link href="css/style.css" rel="stylesheet">
-	<link rel="icon" type="x-icon" href="petlogo.ico">
-	</head>
-<body>
-	<header class="header-main">
-		<div class="header-main-logo">
-			<img src="logo.png" alt="imgagon logo">
-			<nav class="header-main-nav">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="AboutUs.html">About Us</a></li>
-					<li><a href="Pets.html">Pets</a></li>
-					<li><a href="#">Supplies</a></li>
-				</ul>		
-			</nav>
-		</div>
-		<div class="header-main-sm">
-			<a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><div class="header-main-sm-fb"></div></a>
-			<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><div class="header-main-sm-in"></div></a>
-		</div>
-	</header>
-	<div class="center rainbow bold">Free Shipping</div>
-	<div class="wrap">
-		<div id="banner">
-			<h1 class="typewriter">PET SHOP</h1>
-			<div id="action">
-				<h1 class="hover"><a href="https://discountpetsupplies.co.uk/" target="_blank" rel="noopener noreferrer">SHOP NOW</a></h1>
-			</div>
-		</div>
-		<div class="clear spacer v80"></div>
-		<div id="fishFeuture" class="feature">
-			<div class="leftColumn">
-				<div class="text">
-					<h2 class = "typewriter">LOVE FISH</h2>
-					<div class="subheading">THE WIDEST RANGE OF FISHES</div>
-					<hr />
-					<p class="typewriter">Indoor and outdoor , we've got them all</p>
-					<div class="spacer v40"></div>
-					<div class="hover">
-					<a href="https://www.pexels.com/search/fish/" target="_blank" rel="noopener noreferrer">CLICK FOR FISH</a>
-					</div>
-				</div>
-			</div>
-			<div class="rightColumn">
-				<a class="featureImage" src="/Fish">
-					<img style = "width:100px;" src = "Fish.jpg" />
-				</a>
-			</div>
-		</div>
-		<div class="clear spacer v20"></div>
-		<div id="fishImage" class="middleImage">
-			<img style = "width:100px;"src = "Fish2.jpg" />
-		</div>
-		<div class="spacer v80"></div>
-		<div id="dogFeature" class="feature">
-			<div class="leftColumn">
-				<a class="featureImage">
-					<img style = "width:100px;"src="dog.jpg" />
-				</a>
-			</div>
-			<div class="rightColumn">
-				<div class="text">
-					<h2 class="typewriter">HAPPY DOGS</h2>
-					<div class="subheading">EVERYTHING YOUR DOG NEEDS</div>
-					<hr />
-					<p class="typewriter">Make sure your pooch eats well and feels good with our range of doggie treats.</p>
-					<div class="spacer v40"></div>
-					<div class="hover">
-					<a href="https://www.dogstrust.org.uk/" target="_blank" rel="noopener noreferrer">CLICK FOR DOGS</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="hover">
-	<a class="logo" href="/">PET SHOP</a>
-	</div>
-	<hr />
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			var navLinks = document.querySelectorAll('.header-main-nav ul li a');
-			var current = window.location.pathname.split('/').pop();
-			navLinks.forEach(function(link) {
-				if (link.getAttribute('href') === current ) {
-					link.classList.add('active');
-				} else {
-					link.classList.remove('active');
-				}
-			});
-		});
-	</script>
-	</body>
-	</html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Pet Shop</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" type="x-icon" href="petlogo.ico" />
+  </head>
+  <body>
+    <header class="header-main">
+      <div class="header-main-logo">
+        <img src="logo.png" alt="imgagon logo" />
+        <nav class="header-main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Pets.html">Pets</a></li>
+            <li><a href="#">Supplies</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-main-sm">
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><div class="header-main-sm-fb"></div
+        ></a>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><div class="header-main-sm-in"></div
+        ></a>
+      </div>
+    </header>
+    <div class="center rainbow bold">Free Shipping</div>
+    <div class="wrap">
+      <div id="banner">
+        <h1 class="typewriter">PET SHOP</h1>
+        <button id="downloadBtn">Download JAR</button>
+
+<script>
+document.getElementById("downloadBtn").addEventListener("click", function() {
+    const link = document.createElement("a");
+    link.href = "2DGAME.jar";
+    link.download = "2DGAME.jar";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+</script>
+        <div id="action">
+          <h1 class="hover">
+            <a
+              href="https://discountpetsupplies.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >SHOP NOW</a
+            >
+          </h1>
+        </div>
+      </div>
+      <div class="clear spacer v80"></div>
+      <div id="fishFeuture" class="feature">
+        <div class="leftColumn">
+          <div class="text">
+            <h2 class="typewriter">LOVE FISH</h2>
+            <div class="subheading">THE WIDEST RANGE OF FISHES</div>
+            <hr />
+            <p class="typewriter">Indoor and outdoor , we've got them all</p>
+            <div class="spacer v40"></div>
+            <div class="hover">
+              <a
+                href="https://www.pexels.com/search/fish/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CLICK FOR FISH</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="rightColumn">
+          <a class="featureImage" src="/Fish">
+            <img style="width: 100px" src="Fish.jpg" />
+          </a>
+        </div>
+      </div>
+      <div class="clear spacer v20"></div>
+      <div id="fishImage" class="middleImage">
+        <img style="width: 100px" src="Fish2.jpg" />
+      </div>
+      <div class="spacer v80"></div>
+      <div id="dogFeature" class="feature">
+        <div class="leftColumn">
+          <a class="featureImage">
+            <img style="width: 100px" src="dog.jpg" />
+          </a>
+        </div>
+        <div class="rightColumn">
+          <div class="text">
+            <h2 class="typewriter">HAPPY DOGS</h2>
+            <div class="subheading">EVERYTHING YOUR DOG NEEDS</div>
+            <hr />
+            <p class="typewriter">
+              Make sure your pooch eats well and feels good with our range of
+              doggie treats.
+            </p>
+            <div class="spacer v40"></div>
+            <div class="hover">
+              <a
+                href="https://www.dogstrust.org.uk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CLICK FOR DOGS</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hover">
+      <a class="logo" href="/">PET SHOP</a>
+    </div>
+    <hr />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var navLinks = document.querySelectorAll(".header-main-nav ul li a");
+        var current = window.location.pathname.split("/").pop();
+        navLinks.forEach(function (link) {
+          if (link.getAttribute("href") === current) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
