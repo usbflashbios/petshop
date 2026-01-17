@@ -44,13 +44,24 @@
     <div class="wrap">
       <div id="banner">
         <h1 class="typewriter">PET SHOP</h1>
-        <button id="downloadBtn">Download JAR</button>
+        <button id="downloadBtn">Game</button>
+        <button id="downloadBtn1">Time</button>
 
 <script>
 document.getElementById("downloadBtn").addEventListener("click", function() {
     const link = document.createElement("a");
     link.href = "2DGAME.jar";
     link.download = "2DGAME.jar";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+</script>
+<script>
+document.getElementById("downloadBtn1").addEventListener("click", function() {
+    const link = document.createElement("a");
+    link.href = "Time display.jar";
+    link.download = "Time display.jar";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
